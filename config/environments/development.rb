@@ -61,5 +61,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   #Cloudへの接続を許可する
-  config.host.clear
+  config.hosts.clear
 end
