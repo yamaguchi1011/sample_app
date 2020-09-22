@@ -126,4 +126,5 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
+  config.active_storage.service = :amazon
 end
