@@ -1,4 +1,5 @@
 class MicropostsController < ApplicationController
+<<<<<<< HEAD
   before_action :logged_in_user, only: [:create, :destroy]
   before_action :corrent_user, only: :destroy
   
@@ -31,4 +32,6 @@ class MicropostsController < ApplicationController
       redirect_to root_url if @micropost.nil?
     end
   
+=======
+>>>>>>> user-microposts
 end

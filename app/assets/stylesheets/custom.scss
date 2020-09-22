@@ -206,11 +206,20 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+<<<<<<< HEAD
 /* microposts */
 
 .microposts {
   list-style: none;
   padding: 0;
+=======
+
+/*micropposts*/
+
+.microposts {
+  list-style: none;
+  paddiing: 0;
+>>>>>>> user-microposts
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -219,7 +228,11 @@ input {
     margin-top: 5em;
     padding-top: 0;
   }
+<<<<<<< HEAD
   .content {
+=======
+  .content { 
+>>>>>>> user-microposts
     display: block;
     margin-left: 60px;
     img {
@@ -245,7 +258,10 @@ aside {
     margin-bottom: 5px;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> user-microposts
 span.image {
   margin-top: 10px;
   input {

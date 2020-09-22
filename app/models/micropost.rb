@@ -1,5 +1,6 @@
 class Micropost < ApplicationRecord
   belongs_to :user
+<<<<<<< HEAD
   has_one_attached :image
   default_scope -> { order(created_at: :desc) }
   validates :user_id, presence: true
@@ -12,4 +13,10 @@ class Micropost < ApplicationRecord
   def display_image
     image.variant(resize_to_limit: [500,500])
   end
+=======
+  default_scope -> { order(created_at: :desc)}
+  validates :user_id, presence: true
+  validates :content, presence: true, length: { maximum:140 }
+  
+>>>>>>> user-microposts
 end

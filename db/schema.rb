@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_09_20_082027) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
@@ -32,6 +33,9 @@ ActiveRecord::Schema.define(version: 2020_09_20_082027) do
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
+=======
+ActiveRecord::Schema.define(version: 2020_09_12_061302) do
+>>>>>>> user-microposts
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -56,6 +60,9 @@ ActiveRecord::Schema.define(version: 2020_09_20_082027) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+<<<<<<< HEAD
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+=======
+>>>>>>> user-microposts
   add_foreign_key "microposts", "users"
 end
