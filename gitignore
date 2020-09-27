@@ -5,6 +5,6 @@
   #   git config --global core.excludesfile '~/.gitignore_global'
 
   # ...略
-+
-+ # Ignore updated images
-+ /public/uploads
+ 
+  # Ignore updated images
+  /public/uploads
