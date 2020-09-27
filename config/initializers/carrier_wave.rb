@@ -18,9 +18,9 @@ CarrierWave.configure do |config|
     config.fog_credentials = {
       provider: 'AWS',
       # 環境変数で管理する場合
-      aws_access_key_id: ENV["AWS_ACCESS_KEY_ID"],
-      aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],
-      region: 'ap-northeast-1' #東京リージョン
+      aws_access_key_id: Rails.application.credentials.aws[:access_key_id],
+      aws_secret_access_key: Rails.application.credentials.aws[:secret_access_key],
+      region: 'us-east-2' 
     }
     # キャッシュをS3に保存
     # config.cache_storage = :fog
