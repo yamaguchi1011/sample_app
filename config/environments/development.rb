@@ -34,7 +34,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
   
-  host= '<hex string>.vfs.cloud9.us-east-2.amazonaws.com'
+  host= '886232f2e6074dd484238f22b82bc2f8.vfs.cloud9.us-east-2.amazonaws.com'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   config.action_mailer.perform_caching = false
@@ -65,4 +65,5 @@ Rails.application.configure do
   
   #Cloudへの接続を許可する
   config.hosts.clear
+  
 end
